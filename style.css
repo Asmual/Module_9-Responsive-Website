@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* share styles */
+.display_flex{
+  display: flex;
+}
+.btn_1{
+  background-color: rgba(255, 144, 14, 1);
+  border: none;
+  border-radius: 5px;
+  padding: 20px 25px;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 50px;
+
+}
+.text_gray{
+  color: #424242;
+}
+.text_light{
+  color: #727272;
+}
+.bg_colors{
+  background-color: rgba(255, 143, 14, 0.241);
+}
+
+/* navbar related style */
+
+
+.navbar , .banner{
+  max-width: 1156px;
+  margin: 0 auto;
+}
+.Brand{
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.navbar{
+  justify-content: space-between;
+}
+.nav_links{
+  text-decoration: none;
+  align-items: center;
+  font-weight: 500;
+
+}
+.nav_items{
+  list-style: none;
+  margin-right: 30px;
+  
+}
+.banner_content{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+
+
+}
+
+.banner_title{
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.banner img{
+  width: 100%;
+}
+/* responsiv media query */
+@media screen and (max-width:576px) {
+  .navbar, .nav_links{
+    flex-direction: column;
+  }
+  
+}
