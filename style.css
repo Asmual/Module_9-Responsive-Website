@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+p {
+  font-size: 18px;
+  color: #727272;
+}
+
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+
 
 /* share styles */
 .display_flex{
@@ -21,6 +27,16 @@
   margin-bottom: 50px;
 
 }
+.Main_container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.Main_container>section{
+  margin-top: 130px;
+}
+.section_title{
+  font-size: 30px;
+}
 .text_gray{
   color: #424242;
 }
@@ -28,14 +44,14 @@
   color: #727272;
 }
 .bg_colors{
-  background-color: rgba(255, 143, 14, 0.241);
+  background-color: rgba(216, 196, 172, 0.418);
 }
 
 /* navbar related style */
 
 
 .navbar , .banner{
-  max-width: 1156px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 .Brand{
@@ -72,10 +88,60 @@
 .banner img{
   width: 100%;
 }
+
+/* +++++++++++ */
+
+.teams{
+  align-items: center;
+  gap: 40px;
+
+}
+
+.Team_img_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+}
+.Our_features{
+  max-width: 540px;
+}
+
+.Quick_list_text{
+  color: #6e6b6b;
+  font-weight: 500;
+}
+.Features_Text{
+  color: tomato;
+}
+
+
 /* responsiv media query */
 @media screen and (max-width:576px) {
   .navbar, .nav_links{
     flex-direction: column;
   }
+  .Brand {
+    font-size: 2.4rem;
+    text-align: center;
+}
+.nav_links {
+    gap: 13px;
   
+}
+.banner_title {
+    font-size: 3rem;
+}
+
+.Team_img_container {
+    grid-template-columns: repeat(1, 1fr);
+}
+.teams {
+  flex-direction: column;
+}
+.section_title {
+    font-size: 20px;
+}
+
+
 }
