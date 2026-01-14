@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-p {
-  font-size: 18px;
-  color: #727272;
-}
+
 
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
@@ -11,7 +8,21 @@ p {
   font-weight: 400;
   font-style: normal;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px; /* always side gap */
+}
 
+p {
+  font-size: 18px;
+  color: #727272;
+}
 
 /* share styles */
 .display_flex{
@@ -24,14 +35,11 @@ p {
   padding: 20px 25px;
   font-size: 1.2rem;
   color: white;
-  margin-bottom: 50px;
+  margin: 20px 0 50px 0;
 
 }
-.Main_container{
-  max-width: 1440px;
-  margin: 0 auto;
-}
-.Main_container>section{
+
+body .banner ,.teams ,.fact_section{
   margin-top: 130px;
 }
 .section_title{
@@ -49,17 +57,13 @@ p {
 
 /* navbar related style */
 
-
-.navbar , .banner{
-  max-width: 1440px;
-  margin: 0 auto;
-}
 .Brand{
   font-weight: 700;
   font-size: 2.8rem;
 }
 .navbar{
   justify-content: space-between;
+  padding-top: 20px;
 }
 .nav_links{
   text-decoration: none;
@@ -76,13 +80,12 @@ p {
   max-width: 850px;
   margin: 0 auto;
   text-align: center;
-
-
 }
 
 .banner_title{
   font-weight: 700;
   font-size: 4rem;
+  margin-bottom: 15px;
 }
 
 .banner img{
